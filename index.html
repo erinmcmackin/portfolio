@@ -2,15 +2,17 @@
 <html lang="en" dir="ltr" ng-app="MyPortfolio">
   <head>
     <meta charset="utf-8">
-    <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="app.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css"></link>
     <title>Erin McMackin</title>
   </head>
   <body>
-    <div id="container" ng-controller="MyPortfolio as ctrl">
-      <div id="nav-container">
-        <nav>
+    <div class="main-container" ng-controller="MyPortfolio as ctrl">
+      <div class="nav-container">
+        <h1><</br>Erin</br>McMackin</br>/></h1>
+        <nav class="nav">
           <ul>
             <li ng-click="ctrl.navAbout()">About</li>
             <li ng-click="ctrl.navPortfolio()">Portfolio</li>
@@ -18,20 +20,48 @@
           </ul>
         </nav>
       </div>
-      <div id="main-container">
-        <div ng-if="ctrl.showPortfolio" id="portfolio-container">
-          portfolio
+      <div class="main-container">
+        <div ng-if="ctrl.showPortfolio" class="portfolio-container">
+          <h2>Portfolio</h2>
+          <img src="#"></img>
+          <div class="portfolio-card-container">
+            <div class="portfolio-card">
+              <h3>Fit Builder</h3>
+              <img src="#"></img>
+              <p></p>
+            </div>
+            <div class="portfolio-card">
+              <h3>Small & Mighty</h3>
+              <img src="#"></img>
+              <p></p>
+            </div>
+            <div class="portfolio-card">
+              <h3>Cake Battle</h3>
+              <img src="#"></img>
+              <p></p>
+            </div>
+            <div class="portfolio-card">
+              <h3>Code Break</h3>
+              <img src="#"></img>
+              <p></p>
+            </div>
+            <div class="portfolio-card">
+              <h3>Dream Onward</h3>
+              <img src="#"></img>
+              <p></p>
+            </div>
+          </div>
         </div>
-        <div ng-if="ctrl.showAbout" id="about-container">
+        <div ng-if="ctrl.showAbout" class="about-container">
           about
         </div>
-        <div ng-if="ctrl.showResume" id="resume-container">
-          resume
+        <div ng-if="ctrl.showResume" class="resume-container">
+          <h2>Resume</h2>
         </div>
       </div>
-      <div id="footer-container">
-        footer
-      </div>
+    </div>
+    <div class="footer-container">
+      footer
     </div>
   </body>
 </html>
