@@ -2,6 +2,11 @@
   border: 1px solid gold;
 }
 
+.main-container {
+  display: flex;
+  flex-grow: 1;
+}
+
 /* ========== */
 /* NAV */
 /* ========== */
@@ -9,6 +14,10 @@
 .nav > ul {
   list-style: none;
   padding: 0;
+}
+
+.nav-container {
+  width: 200px;
 }
 
 
@@ -19,6 +28,17 @@
 .main-container {
   display: flex;
   flex-direction: row;
+}
+
+
+
+
+/* ========== */
+/* PORTFOLIO */
+/* ========== */
+
+.portfolio-card > img {
+  width: 100%;
 }
 
 
