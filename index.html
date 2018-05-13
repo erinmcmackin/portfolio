@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="MyPortfolio">
+  <head>
+    <meta charset="utf-8">
+    <!-- <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Erin McMackin</title>
+  </head>
+  <body>
+    <div class="main-container" ng-controller="MyPortfolio as ctrl">
+      <div class="nav-container">
+        <h1><</br>Erin</br>McMackin</br>/></h1>
+        <nav class="nav">
+          <ul>
+            <li ng-click="ctrl.navAbout()">About</li>
+            <li ng-click="ctrl.navPortfolio()">Portfolio</li>
+            <li ng-click="ctrl.navResume()">Resume</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-container">
+        <div ng-if="ctrl.showPortfolio" class="portfolio-container">
+          <h2>Portfolio</h2>
+          <img src="#"></img>
+          <div class="portfolio-card-container">
+            <div class="portfolio-card">
+              <h3><a href="https://fit-builder.herokuapp.com/">Fit Builder</a></h3>
+              <img src="#"></img>
+              <p></p>
+            </div>
+            <div class="portfolio-card">
+              <h3><a href="https://small-and-mighty.herokuapp.com/">Small & Mighty</a></h3>
+              <img src="./images/Small-Mighty.png"></img>
+              <p></p>
+            </div>
+            <div class="portfolio-card">
+              <h3><a href="https://erinmcmackin.github.io/">Cake Clash</a></h3>
+              <img src="./images/Cake-Clash.png"></img>
+              <p></p>
+            </div>
+            <div class="portfolio-card">
+              <h3><a href="https://code-break.herokuapp.com/">Code Break</a></h3>
+              <img src="./images/Code-Break.png"></img>
+              <p></p>
+            </div>
+            <div class="portfolio-card">
+              <h3><a href="https://dream-onward.herokuapp.com/">Dream Onward</a></h3>
+              <img src="./images/Dream-Onward.png"></img>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div ng-if="ctrl.showAbout" class="about-container">
+          about
+        </div>
+        <div ng-if="ctrl.showResume" class="resume-container">
+          <div class="experience">
+            <h2>Experience</h2>
+            <div class="job">
+              <div class="job-title">
+                <h3>Web Development Fellow</h3>
+                <h4>General Assembly Web Development Immersive</h4>
+                <h5>February 2018 – May 2018</h5>
+              </div>
+              <div class="job-description">
+                <ul>
+                  <li>Participated in a full-time immersive Web Development course, completing in-class projects, hackathons, and personal projects focused on real-world applications of web development principles and best practices</li>
+                  <li>Developed a portfolio of individually and collaboratively focused in-class projects, including:</li>
+                </ul>
+              </div>
+            </div>
+            <div class="job">
+              <div class="job-title">
+                <h3>Technical Analyst, Application Development, & Digital Signage Coordinator</h3>
+                <h4>Owens-Illinois, Inc.</h4>
+                <h5>Feb. 2017 – present</h5>
+              </div>
+              <div class="job-description">
+                <ul>
+                  <li>Work with the business to find the best solutions for their IT needs within the Application Development team</li>
+                  <li>Provide direction to the Developers, including workflow design and acceptance criteria; perform testing</li>
+                  <li>Perform basic system administration and development on the ServiceNow platform as needed</li>
+                  <li>Led the expansion of global digital signage to 30 units in every region of our operations, including a proof-of- concept in our plants to monitor blank temperature, leading to a safer work environment and better-quality bottles</li>
+                  <li>Supervised a full-time Intern in the day-to-day maintenance of the signage software and hardware</li>
+                </ul>
+              </div>
+            </div>
+            <div class="job">
+              <div class="job-title">
+                <h3>Corporate Communications Specialist</h3>
+                <h4>Owens-Illinois, Inc.</h4>
+                <h5>June 2014 – Jan. 2017</h5>
+              </div>
+              <div class="job-description">
+                <ul>
+                  <li>Created and executed strategies to improve the internal and external websites, and internal social media</li>
+                  <li>Supported the CEO and other top leaders in the company with strategic communications and events</li>
+                  <li>Promoted from Intern one month earlier than end of contract, in November 2017</li>
+                </ul>
+              </div>
+            </div>
+            <div class="job">
+              <div class="job-title">
+                <h3>Price and Signage Coordinator</h3>
+                <h4>Dick’s Sporting Goods</h4>
+                <h5>Oct. 2013 – May 2014</h5>
+              </div>
+              <div class="job-description">
+                <ul>
+                  <li>Directed team to execute weekly price changes and signage set; reduced time and number of employees needed</li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- closes experiences -->
+          <div class="education">
+            <h2>Education</h2>
+            <div class="education-item">
+              <div class="school">
+                <h3>University of Colorado Denver</h3>
+              </div>
+              <div class="degree">
+                <h4>Dual MBA and MS in Information Systems (anticipated graduation December 2020)</h4>
+              </div>
+              <div class="location">
+                <h5>Online</h5>
+              </div>
+            </div>
+            <div class="education-item">
+              <div class="school">
+                <h3>General Assembly</h3>
+              </div>
+              <div class="degree">
+                <h4>Web Development Immersive</h4>
+              </div>
+              <div class="location">
+                <h5>Online</h5>
+              </div>
+            </div>
+            <div class="education-item">
+              <div class="school">
+                <h3>American University</h3>
+              </div>
+              <div class="degree">
+                <h4>BA in Public Communication, Minor in Economics</h4>
+              </div>
+              <div class="location">
+                <h5>Washington, DC</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-container">
+      footer
+    </div>
+  </body>
+</html>

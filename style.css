@@ -1,0 +1,58 @@
+* {
+  border: 1px solid gold;
+}
+
+.main-container {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* ========== */
+/* NAV */
+/* ========== */
+
+.nav > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-container {
+  width: 200px;
+}
+
+
+/* ========== */
+/* INDEX */
+/* ========== */
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+/* ========== */
+/* PORTFOLIO */
+/* ========== */
+
+.portfolio-card > img {
+  width: 100%;
+}
+
+/* ========== */
+/* RESUME */
+/* ========== */
+
+
+
+
+/* ========== */
+/* FOOTER */
+/* ========== */
+
+.footer-container {
+  flex: 1;
+  width: 100%;
+}
