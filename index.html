@@ -23,14 +23,13 @@
       <div class="content-container">
         <div ng-if="ctrl.showPortfolio" class="portfolio-container">
           <h2>Portfolio</h2>
-          <img src="#"></img>
           <div class="portfolio-card-container">
             <div class="portfolio-card">
               <h3><a href="https://fit-builder.herokuapp.com/">Fit Builder</a></h3>
-              <img src="#"></img>
+              <img src="./images/Fit-Builder.png"></img>
               <p></p>
             </div>
-            <div ng-click="https://small-and-mighty.herokuapp.com/" class="portfolio-card">
+            <div class="portfolio-card">
               <h3><a href="https://small-and-mighty.herokuapp.com/">Small & Mighty</a></h3>
               <img src="./images/Small-Mighty.png"></img>
               <p></p>
@@ -53,7 +52,24 @@
           </div>
         </div>
         <div ng-if="ctrl.showAbout" class="about-container">
-          about
+          <h2>About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                Curious as can be, I always strive to discover new places, people, and ways to interact with the world around me. When I become interested in a field, I explore and learn until this field becomes one of my strengths. My penchant for exploration has also provided me with the tools to solve quandaries with foresight and from multiple perspectives. My natural perspective is optimism. I believe things can always be salvaged or get better, so I never let negativity keep me from my goals!
+              </p>
+              <p>
+                Personal exploration not only pushes me to keep improving myself, but also builds upon my unmovable core belief in improving the world around me. I will continue to change and grow so I may contribute more value to others.
+              </p>
+              <div class="about-buttons">
+                <a href="https://github.com/erinmcmackin"><button>GitHub</button></a>
+                <a href="https://www.linkedin.com/in/erinmcmackin/"><button>LinkedIn</button></a>
+              </div>
+            </div>
+            <div class="about-image">
+              <img src="./images/McMackin_Erin 2.jpg" alt="Erin McMackin"></img>
+            </div>
+          </div>
         </div>
         <div ng-if="ctrl.showResume" class="resume-container">
           <div class="experience">
@@ -159,8 +175,8 @@
         </div>
       </div>
     </div>
-    <div class="footer-container">
+    <!-- <div class="footer-container">
       footer
-    </div>
+    </div> -->
   </body>
 </html>
